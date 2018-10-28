@@ -1,0 +1,40 @@
+<% include partials/header %>
+            <div class="row">
+                <div class="col">
+                    <section>
+                        <form action="/process" method="post">
+                            <div class="form-group">
+                                <label for="name">Your name: </label>
+                                <input type="text" name="name" placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Dojo Location: </label>
+                                <select name="location" class="form-control">
+                                <option value="" default>Choose location</option>
+                                <option value="Seattle">Seattle</option>
+                                <option value="Burbank">Burbank</option>
+                                <option value="San Jose">San Jose</option>
+                                <option value="Chicago">Chicago</option>
+                                <option value="Dallas">Dallas</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="language">Favorite language: </label>
+                                <select name="language" class="form-control">
+                                <option value="" default>Choose language</option>
+                                <option value="Python">Python</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="Angular">Angular</option>
+                                <option value="React">React</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Comment (optional): </label>
+                                <textarea name="comment" class="form-control" rows="5" cols="5"></textarea>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+<% include partials/footer %>
